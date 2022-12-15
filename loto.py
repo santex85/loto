@@ -37,9 +37,8 @@ class Card:
                 self.card[i][j] = number  # вставляем номера в карточку
                 numbers.remove(number)  # удаляем номера из списка
 
-        # sort the row in card
+        # отсортировать строку в карточке
         for i in self.card:
-            i.sort()
             while len(set(i)) > 6:
                 i[random.randint(0, 8)] = ' '
 
